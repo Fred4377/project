@@ -1,0 +1,39 @@
+/*
+{
+  "name": "mobileshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./sass/style.scss style.css --watch"
+  },
+  "author": "Fred Otieno",
+  "license": "ISC",
+  "description": ""
+}*/
+
+
+
+{
+  "name": "mobileshop",
+  "version": "1.0.0",
+  "description": "A mobile shop project using Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./sass/style.scss style.css --watch"
+  },
+  "author": "Fred Otieno",
+  "license": "ISC",
+  "dependencies": {},
+  "keywords": [
+    "mobile",
+    "shop",
+    "sass",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mobileshop.git"
+  }
+}

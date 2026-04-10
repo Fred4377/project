@@ -1,4 +1,6 @@
 // Obachi Mobile Shop - Core Business Logic
+// TODO: Refactor this massive file into modules eventually. It's getting too big.
+// Using jQuery for now because it's what I know best, but maybe migrate to React later?
 
 $(document).ready(function() {
   // ----------------------------------------------------

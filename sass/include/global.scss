@@ -162,7 +162,7 @@ button.button:focus {
   padding: 30px;
   transform: scale(0.9);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  font-family: $font-rale;
+  font-family: $font-raleway;
 }
 
 .checkout-modal.show .checkout-content {
@@ -173,7 +173,7 @@ button.button:focus {
   background-color: var(--bg-color);
   color: var(--text-color);
   border-color: var(--border-color);
-  font-family: $font-rale;
+  font-family: $font-raleway;
 }
 
 .form-control:focus {

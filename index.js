@@ -314,6 +314,21 @@ $(document).ready(function() {
       $(this).addClass("is-checked");
     });
 
+    // Check if redirecting from brand dropdown menu
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterBrand = urlParams.get('brand');
+    if (filterBrand) {
+      const btn = $(`.button-group button[data-filter=".${filterBrand}"]`);
+      if (btn.length) {
+        setTimeout(() => {
+          $('html, body').animate({
+            scrollTop: $("#special-price").offset().top - 80
+          }, 600);
+          btn.trigger('click');
+        }, 400);
+      }
+    }
+
     // 6.5 Blogs Owl Carousel
     $("#blogs .owl-carousel").owlCarousel({
       loop: true,

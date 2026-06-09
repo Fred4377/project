@@ -1,44 +1,204 @@
+/* Product Card & Gallery Styles */
+#Top-Sale, #top-sale, #new-phones, #special-price {
+  .product {
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
 
-
-/* Top-Sale Template */
-#top-sale {
-    .owl-carousel .item.product a {
-        overflow: hidden;
+    a {
+      display: block;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      text-align: center;
     }
 
-    .owl-carousel .item.product img {
-        transition: transform 0.5s ease;
+    img {
+      max-height: 180px;
+      object-fit: contain;
+      transition: transform 0.5s ease;
     }
 
-    .owl-carousel .item.product img:hover {
-        transform: scale(1.1);
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: $color-second;
+
+      img {
+        transform: scale(1.08);
+      }
     }
 
-    .owl-carousel.owl-nav button {
-        position: absolute;
-        top: 30%;
-        outline: none;
+    .rating {
+      color: $color-yellow;
+      margin-bottom: 8px;
     }
 
-    .owl-carousel.owl-nav button.owl-prev {
-        left: 0;
+    h6 {
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 8px;
+      font-family: $font-rubik;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .owl-carousel.owl-nav button.owl-prev span {
-        font-size: 30px;
-        color: $color-primary;
-        margin-left: -4rem;
-        padding: 0 1rem;
+    .price {
+      font-family: $font-baloo;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-color);
     }
 
-    .owl-carousel.owl-nav button.owl-next {
-        right: 0;
+    .btn-warning {
+      background-color: $color-yellow;
+      border: none;
+      color: #1e293b;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 6px 16px;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+
+      &:hover {
+        background-color: darken($color-yellow, 10%);
+        transform: translateY(-1px);
+      }
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .owl-carousel .owl-nav {
+    button {
+      position: absolute;
+      top: 35%;
+      background: none;
+      border: none;
+      outline: none;
     }
 
-    .owl-carousel.owl-nav button.owl-next span {
-        font-size: 30px;
-        color: $color-primary;
-        margin-right: -4rem;
-        padding: 0 1rem;
+    button.owl-prev {
+      left: -20px;
+      span {
+        font-size: 40px;
+        color: var(--text-muted);
+        &:hover {
+          color: $color-second;
+        }
+      }
     }
+
+    button.owl-next {
+      right: -20px;
+      span {
+        font-size: 40px;
+        color: var(--text-muted);
+        &:hover {
+          color: $color-second;
+        }
+      }
+    }
+  }
+}
+
+/* Wishlist Icon Button Overlay */
+.wishlist-icon-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease;
+
+  &:hover {
+    transform: scale(1.12);
+    background: #ffffff;
+  }
+
+  i {
+    color: #94a3b8;
+    font-size: 15px;
+    transition: color 0.2s ease;
+  }
+
+  &.active i {
+    color: #ef4444 !important;
+  }
+}
+
+[data-theme="dark"] {
+  .wishlist-icon-btn {
+    background: rgba(30, 41, 59, 0.8);
+    border-color: rgba(255, 255, 255, 0.05);
+    &:hover {
+      background: #1e293b;
+    }
+    i {
+      color: #64748b;
+    }
+  }
+}
+
+/* Special Price Filter Section Grid */
+#special-price {
+  .grid {
+    margin-top: 25px;
+  }
+  .grid-item {
+    width: 25%;
+    padding: 12px;
+  }
+  
+  @media (max-width: 991px) {
+    .grid-item {
+      width: 33.33%;
+    }
+  }
+  @media (max-width: 767px) {
+    .grid-item {
+      width: 50%;
+    }
+  }
+  @media (max-width: 575px) {
+    .grid-item {
+      width: 100%;
+    }
+  }
+
+  .button-group {
+    button {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      border-radius: 30px;
+      padding: 6px 20px;
+      margin: 4px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+
+      &:hover, &.is-checked {
+        background: $color-second;
+        color: #ffffff;
+        border-color: $color-second;
+      }
+    }
+  }
 }

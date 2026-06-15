@@ -542,8 +542,8 @@ button.button:focus {
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --dark-bg: #0f172a;
-    --dark-surface: #1e293b;
+    --dark-bg: #050508;
+    --dark-surface: #0b0c10;
     --accent-blue: #3b82f6;
     --accent-violet: #8b5cf6;
     --text-light: #f8fafc;
@@ -573,7 +573,7 @@ h1, h2, h3, h4, h5, h6, .font-rubik, .font-rale {
 }
 
 .navbar {
-    background: rgba(15, 23, 42, 0.85) !important;
+    background: rgba(5, 5, 8, 0.85) !important;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(139, 92, 246, 0.2);
     padding: 15px 0 !important;
@@ -671,7 +671,7 @@ h1, h2, h3, h4, h5, h6, .font-rubik, .font-rale {
 }
 
 section:nth-of-type(even) {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    background: linear-gradient(135deg, #0b0c10 0%, #050508 100%);
     box-shadow: inset 0 0 50px rgba(0,0,0,0.3);
 }
 

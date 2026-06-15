@@ -207,7 +207,7 @@ $(document).ready(function() {
             ${getRatingStars(product.rating)}
           </div>
           <div class="price py-2">
-            <span>$${product.price.toFixed(2)}</span>
+            <span>KSh ${product.price.toLocaleString()}</span>
           </div>
           <button class="btn btn-warning font-size-12 add-to-cart-home-btn" data-id="${product.id}">Add To Cart</button>
         </div>
@@ -363,11 +363,11 @@ $(document).ready(function() {
     $("#product .rating").html(getRatingStars(product.rating));
     
     // Set prices
-    const mprPrice = product.price * 1.15;
+    const mprPrice = Math.round(product.price * 1.15);
     const savePrice = mprPrice - product.price;
-    $("#product table td strike").text(`$${mprPrice.toFixed(2)}`);
-    $("#product table td.font-size-20 span").text(product.price.toFixed(2));
-    $("#product table td.font-size-16 span").text(savePrice.toFixed(2));
+    $("#product table td strike").text(`KSh ${mprPrice.toLocaleString()}`);
+    $("#product table td.font-size-20 span").text(product.price.toLocaleString());
+    $("#product table td.font-size-16 span").text(savePrice.toLocaleString());
 
     // Description text
     $("#product .col-12 p:first-of-type").text(product.description);
@@ -552,7 +552,7 @@ $(document).ready(function() {
             </div>
             <div class="col-sm-2 text-right">
               <div class="font-size-20 text-danger font-baloo">
-                $<span>${totalProductPrice.toFixed(2)}</span>
+                KSh <span>${totalProductPrice.toLocaleString()}</span>
               </div>
             </div>
           </div>
@@ -567,7 +567,7 @@ $(document).ready(function() {
           <hr class="my-2">
           <div class="py-2">
             <h5 class="font-baloo font-size-16">Subtotal (${totalItemCount} items)</h5>
-            <h4 class="text-danger font-baloo font-weight-bold">$<span id="deal-price">${cartSubtotal.toFixed(2)}</span></h4>
+            <h4 class="text-danger font-baloo font-weight-bold">KSh <span id="deal-price">${cartSubtotal.toLocaleString()}</span></h4>
             <button type="button" class="btn btn-warning w-100 mt-3 py-2 btn-proceed-buy font-rubik">Proceed To Buy</button>
           </div>
         </div>

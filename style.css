@@ -20,18 +20,18 @@
 }
 
 [data-theme=dark] {
-  --bg-color: #0f172a; /* Slate 900 */
-  --bg-card: #1e293b; /* Slate 800 */
-  --bg-light-gray: #1e293b;
-  --text-color: #f8fafc; /* Slate 50 */
-  --text-muted: #94a3b8; /* Slate 400 */
-  --border-color: #334155; /* Slate 700 */
-  --strip-bg: #1e293b;
-  --nav-bg: rgba(15, 23, 42, 0.85); /* Slate 900 with transparency */
+  --bg-color: #0b0c10; /* Carbon Black */
+  --bg-card: #1f2833; /* Carbon Grey */
+  --bg-light-gray: #1f2833;
+  --text-color: #f8fafc;
+  --text-muted: #c5a880; /* Toned gold or muted text */
+  --border-color: #2c3540;
+  --strip-bg: #1f2833;
+  --nav-bg: rgba(11, 12, 16, 0.85); /* Carbon Black with transparency */
   --nav-text: #f8fafc;
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 /* Global Theme & Layout Classes */

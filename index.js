@@ -24,7 +24,7 @@ $(document).ready(function() {
   // 2. Theme Switching Logic
   // ----------------------------------------------------
   function initTheme() {
-    const savedTheme = localStorage.getItem('mobileshop_theme') || 'light';
+    const savedTheme = localStorage.getItem('mobileshop_theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     updateThemeToggleUI(savedTheme);
 

@@ -20,15 +20,15 @@
 }
 
 [data-theme=dark] {
-  --bg-color: #0b0c10; /* Carbon Black */
-  --bg-card: #1f2833; /* Carbon Grey */
-  --bg-light-gray: #1f2833;
-  --text-color: #f8fafc;
-  --text-muted: #c5a880; /* Toned gold or muted text */
+  --bg-color: #121212;
+  --bg-card: #1e1e24;
+  --bg-light-gray: #1e1e24;
+  --text-color: #E5E7EB;
+  --text-muted: #9ca3af;
   --border-color: #2c3540;
-  --strip-bg: #1f2833;
-  --nav-bg: rgba(11, 12, 16, 0.85); /* Carbon Black with transparency */
-  --nav-text: #f8fafc;
+  --strip-bg: #1e1e24;
+  --nav-bg: rgba(18, 18, 18, 0.85);
+  --nav-text: #E5E7EB;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
@@ -539,15 +539,14 @@ button.button:focus {
    MODERN ELECTRIC CYAN & CARBON TECH OVERHAUL
    ========================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --dark-bg: #0b0c10;
-    --dark-surface: #1f2833;
+    --dark-bg: #121212;
+    --dark-surface: #1e1e24;
     --accent-cyan: #00f5ff;
-    --accent-teal: #45a29e;
-    --text-light: #ffffff;
-    --text-muted: #c5c6c7;
+    --accent-purple: #a855f7;
+    --text-light: #E5E7EB;
+    --text-muted: #9ca3af;
 }
 
 body {
@@ -567,18 +566,18 @@ h1, h2, h3, h4, h5, h6, .font-rubik {
 
 /* Same-day delivery banner styling */
 .delivery-banner {
-    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-teal));
-    color: #0b0c10 !important;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    color: #121212 !important;
     font-weight: 700;
     box-shadow: 0 4px 15px rgba(0, 245, 255, 0.15);
 }
 .delivery-banner span {
-    color: #0b0c10 !important;
+    color: #121212 !important;
 }
 
 /* Glassmorphism Header */
 #header .strip {
-    background: #020204 !important;
+    background: #18181b !important;
     color: var(--text-muted) !important;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
@@ -588,7 +587,7 @@ h1, h2, h3, h4, h5, h6, .font-rubik {
 }
 
 .navbar {
-    background: rgba(11, 12, 16, 0.85) !important;
+    background: rgba(18, 18, 18, 0.85) !important;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 245, 255, 0.2);
     padding: 15px 0 !important;
@@ -598,7 +597,7 @@ h1, h2, h3, h4, h5, h6, .font-rubik {
     font-family: 'Rubik', sans-serif !important;
     font-weight: 700;
     font-size: 1.5rem;
-    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-teal));
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -652,9 +651,9 @@ h1, h2, h3, h4, h5, h6, .font-rubik {
 
 /* Buttons */
 .btn-warning {
-    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-teal)) !important;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple)) !important;
     border: none !important;
-    color: #0b0c10 !important;
+    color: #121212 !important;
     border-radius: 30px !important;
     padding: 8px 20px !important;
     font-weight: 700;
@@ -664,7 +663,7 @@ h1, h2, h3, h4, h5, h6, .font-rubik {
 .btn-warning:hover {
     filter: brightness(1.2);
     transform: scale(1.05);
-    color: #0b0c10 !important;
+    color: #121212 !important;
 }
 
 /* Categories Filter Buttons */
@@ -678,7 +677,7 @@ h1, h2, h3, h4, h5, h6, .font-rubik {
 
 #filter .btn.is-checked, #filter .btn:hover {
     background: var(--accent-cyan) !important;
-    color: #0b0c10 !important;
+    color: #121212 !important;
     border-color: var(--accent-cyan) !important;
     font-weight: 600;
 }
@@ -689,7 +688,7 @@ h1, h2, h3, h4, h5, h6, .font-rubik {
 }
 
 section:nth-of-type(even) {
-    background: linear-gradient(135deg, #1f2833 0%, #0b0c10 100%);
+    background: linear-gradient(135deg, #1e1e24 0%, #121212 100%);
     box-shadow: inset 0 0 50px rgba(0,0,0,0.3);
 }
 
@@ -726,19 +725,19 @@ hr {
 }
 
 .color-second {
-    color: var(--accent-teal) !important;
+    color: var(--accent-purple) !important;
     padding: 0 15px 15px;
     display: inline-block;
 }
 
 /* Footer */
 #footer {
-    background: #020204 !important;
+    background: #18181b !important;
     border-top: 1px solid rgba(0, 245, 255, 0.2);
 }
 
 .Copywrite {
-    background: #000000 !important;
+    background: #121212 !important;
 }
 
 /* Cart Page Updates */
@@ -761,11 +760,11 @@ hr {
 
 /* Wishlist Icon Button Overlay customization for Cyan theme */
 .wishlist-icon-btn {
-    background: rgba(31, 40, 51, 0.85) !important;
+    background: rgba(30, 30, 36, 0.85) !important;
     border-color: rgba(255, 255, 255, 0.05) !important;
 }
 .wishlist-icon-btn:hover {
-    background: #1f2833 !important;
+    background: #1e1e24 !important;
 }
 .wishlist-icon-btn i {
     color: var(--text-muted) !important;
